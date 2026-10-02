@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Trivia Master</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>🧠 Trivia Master</h1>
+<div class="hud"><span>⭐ <b id="score">0</b></span><span>🔥 <b id="streak">0</b></span><span id="lives">❤️❤️❤️</span><span>🏆 <b id="best">0</b></span></div>
+
+<section id="start" class="card center">
+<p>Gira la ruleta, elige una asignatura y responde. ¡Tienes 3 vidas y 20 segundos por pregunta!</p>
+<button class="btn" id="playBtn">Jugar</button>
+</section>
+
+<section id="spin" class="hide">
+<div id="wheelWrap"><div id="pointer"></div><div id="wheel"></div></div>
+<button class="btn" id="spinBtn">¡Girar ruleta!</button>
+</section>
+
+<section id="quiz" class="card hide">
+<span class="cat" id="cat"></span>
+<div id="timer"><div id="bar"></div></div>
+<p id="q"></p>
+<div id="opts"></div>
+</section>
+
+<section id="end" class="card center hide">
+<h2>Fin del juego</h2>
+<div class="big" id="final">0</div>
+<p id="msg"></p>
+<button class="btn" id="again">Jugar de nuevo</button>
+</section>
+</main>
+<script src="script.js"></script>
+</body>
+</html>
